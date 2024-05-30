@@ -35,7 +35,7 @@ export const Home = () => {
             <Post key = {index} isLoading={true} />
           ):(
             <Post
-              _id={obj._id}
+              id={obj._id}
               title={obj.title}
               imageUrl={obj.imageUrl ? ` process.env.REACT_APP_API_URL${obj.imageUrl}`:''}
               user={obj.user}
